@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: white;
+}
+
+/* Layout */
+.app {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Chat */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Messages */
+.user-msg {
+  text-align: right;
+  margin: 10px;
+  padding: 10px;
+  background: #3b82f6;
+  border-radius: 10px;
+}
+
+.bot-msg {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  background: #374151;
+  border-radius: 10px;
+}
+
+/* Input */
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Voice button */
+.chat-input button {
+  margin-left: 5px;
+  background: #6366f1;
+  color: white;
+  border-radius: 6px;
+  border: none;
+}
+
+/* Scroll smooth */
+.chat-box {
+  scroll-behavior: smooth;
+}
+
+/* Bubble animation */
+.user-msg, .bot-msg {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Container */
+.container {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Title */
+.container h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* Divider */
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 20px 0;
+}
+
+/* Chat Box */
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Messages */
+.user-msg {
+  background: #3b82f6;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px;
+  text-align: right;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.bot-msg {
+  background: #374151;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px;
+  width: fit-content;
+}
+
+/* Input + Buttons Row */
+.input-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Input */
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Secondary buttons */
+.secondary-btn {
+  background: #4b5563;
+}
+
+/* Score */
+.score {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #22c55e;
+  font-weight: bold;
+}
+/* Layout container */
+.container {
+  width: 75%;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  color: white;
+}
+
+/* Chat box */
+.chat-box {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 15px 0;
+}
+
+/* Messages */
+.user-msg {
+  background: #3b82f6;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px;
+  text-align: right;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.bot-msg {
+  background: #374151;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px;
+  width: fit-content;
+}
+
+/* Input row */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Action row */
+.action-row {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Secondary button */
+.secondary-btn {
+  background: #4b5563;
+}
+
+/* Score */
+.score {
+  margin-top: 10px;
+  color: #22c55e;
+  font-weight: bold;
+}
+/* Page card */
+.page-card {
+  width: 70%;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  color: white;
+}
+
+/* Title */
+.page-card h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+}
+
+/* Textarea */
+.page-card textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+/* Button */
+.page-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  cursor: pointer;
+}
+
+.page-card button:hover {
+  transform: scale(1.05);
+}
+
+/* Output */
+.output-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #374151;
+  border-radius: 8px;
+  min-height: 100px;
+}
+
+/* Loading */
+.loading {
+  margin-top: 10px;
+  color: #22c55e;
+}
